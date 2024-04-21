@@ -1,0 +1,20 @@
+{
+  "name": "cheq-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-only": "./node_modules/.bin/cucumber-js ./cucumber/features --require ./cucumber -t"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^10.4.0",
+    "bluebird": "^3.7.2",
+    "chai": "4.3.4",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "playwright": "^1.43.1"
+  }
+}
