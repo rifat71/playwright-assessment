@@ -12,5 +12,4 @@ const fs = require('fs');
  */
 Then(/^check the file downloads correctly$/, async function () {
   expect(fs.existsSync(this.filePath)).to.equal(true);
-  await this.browser.close();
 });

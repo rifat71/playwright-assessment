@@ -1,5 +1,5 @@
 {
-  "name": "cheq-assessment",
+  "name": "playwright-assessment",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,11 @@
     "bluebird": "^3.7.2",
     "chai": "4.3.4",
     "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "mkdirp": "^3.0.1",
     "path": "^0.12.7",
-    "playwright": "^1.43.1"
+    "playwright": "^1.43.1",
+    "require-dir": "^1.2.0",
+    "sanitize-filename": "^1.6.3"
   }
 }
