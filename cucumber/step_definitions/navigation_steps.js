@@ -1,5 +1,5 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const { chromium } = require('playwright');
+const { navigateTo } = require(`../../utils/navigation`);
 
 /**
  * When I navigate to the '(.+)' details page
@@ -12,8 +12,5 @@ const { chromium } = require('playwright');
  */
 Given(/^I navigate to the '(.+)' page$/, async function (pageUrl) {
     const urlString = `${pageUrl}`;
-    this.browser = await chromium.launch({ headless: false, args: [`--window-position=0,0`] });
-    this.context = await this.browser.newContext();
-    this.page = await this.context.newPage();
-    await this.page.goto(urlString);
+    await navigateTo(this, { urlString });
 });
