@@ -1,5 +1,4 @@
 const { When } = require('@cucumber/cucumber');
-const path = require(`path`);
 
 /**
  * When I download from '(.+)' link
