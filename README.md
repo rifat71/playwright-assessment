@@ -52,10 +52,6 @@ Troubleshooting
   * baseUrl is in the before hooks and navigating to any URL will be adjusted in the utils/navigation file
 
 
-Test Report Example Image
----------------------------------
-![cucumber-html-report](https://imgur.com/gallery/3M64jnK)
-
 
 Contributing
 ---------------------------------

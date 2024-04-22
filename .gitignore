@@ -2,5 +2,4 @@
 **/.DS_Store
 .env
 node_modules
-resources/downloads/*
 .vscode/launch.json
