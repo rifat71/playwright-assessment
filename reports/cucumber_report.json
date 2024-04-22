@@ -6,7 +6,7 @@
         "description": "",
         "id": "download-pdf-file-failed;download-a-printable-pdf-with-invalid-link",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 3,
         "name": "Download a Printable PDF with Invalid Link",
         "steps": [
           {
@@ -14,40 +14,40 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1325234165
+              "duration": 1309456749
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "I navigate to the 'Selenium Tutorial' page",
             "match": {
               "location": "cucumber/step_definitions/navigation_steps.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1035687416
+              "duration": 1036938875
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 5,
             "name": "I download from 'Invalid' link",
             "match": {
               "location": "cucumber/step_definitions/click_steps.js:12"
             },
             "result": {
               "status": "failed",
-              "duration": 30002545457,
+              "duration": 30002731875,
               "error_message": "page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//a[contains(.,\\'Invalid\\')]') to be visible\u001b[22m\n\n    at World.<anonymous> (/Users/amanullah/Documents/cse/playwright-assessment/cucumber/step_definitions/click_steps.js:13:40)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
+            "line": 6,
             "name": "check the file downloads correctly",
             "match": {
               "location": "cucumber/step_definitions/assertion_steps.js:13"
@@ -62,7 +62,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 926049374
+              "duration": 914321708
             },
             "embeddings": [
               {
@@ -75,14 +75,14 @@
         "tags": [
           {
             "name": "@wip2",
-            "line": 3
+            "line": 2
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "download-pdf-file-failed",
-    "line": 2,
+    "line": 1,
     "keyword": "Feature",
     "name": "Download PDF File Failed",
     "tags": [],
