@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-only": "./node_modules/.bin/cucumber-js ./cucumber/features --require ./cucumber -t"
+    "test-only": "./node_modules/.bin/cucumber-js ./cucumber/features --require ./cucumber -t",
+    "test-pass": "./node_modules/.bin/cucumber-js -p default -p html_report --tags \"@wip\"",
+    "test-fail": "./node_modules/.bin/cucumber-js -p default -p html_report --tags \"@wip2\""
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,11 @@
     "path": "^0.12.7",
     "playwright": "^1.43.1",
     "require-dir": "^1.2.0",
-    "sanitize-filename": "^1.6.3"
+    "sanitize-filename": "^1.6.3",
+    "uninstall": "^0.0.0"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^7.1.1",
+    "reports": "^0.1.1"
   }
 }

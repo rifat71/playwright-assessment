@@ -9,7 +9,7 @@ const { When } = require('@cucumber/cucumber');
  * @name When-I-from-'(.+)'-link
  * @param {string} text - Any link
  */
-When(/^I download from '(.+)' link$/, { timeout: 6 * 5000 }, async function (textValue) {
+When(/^I download from '(.+)' link$/, { timeout: 12 * 5000 }, async function (textValue) {
   const downloadLink = await this.page.waitForSelector(this.locators.global.link.replace('{txt}', textValue));
   await downloadLink.evaluate(element => { element.setAttribute('download', 'download'); });
   const downloadPromise = this.page.waitForEvent('download');

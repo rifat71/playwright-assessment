@@ -1,7 +1,9 @@
-const { After, Before, Status } = require('@cucumber/cucumber');
+const { After, Before, AfterAll, Status } = require('@cucumber/cucumber');
+var reporter = require('cucumber-html-reporter');
 const sanitize = require('sanitize-filename');
 const { chromium } = require('playwright');
 const _ = require('lodash');
+const Report = require('./report');
 
 Before(async function (scenario) {
     console.log("\nRunning Scenario: " + scenario.pickle.name);
@@ -24,4 +26,12 @@ After(async function (scenario) {
 
     await this.browser.close();
     await this.sleep(700);
+});
+
+AfterAll(async function () {
+    console.log("Execute after all hook.");
+
+    setTimeout(() => {
+        Report.generate();
+    }, 1000)
 });

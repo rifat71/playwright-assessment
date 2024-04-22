@@ -12,7 +12,7 @@ class Screenshot {
      */
     constructor(world) {
         this.world = world;
-        this.screenshotPath = path.join("report", "screenshots");
+        this.screenshotPath = path.join("reports", "screenshots");
 
         if (this.world.debug) console.log('Screenshot:constructor');
 
@@ -43,6 +43,7 @@ class Screenshot {
             const data = await this.world.page.screenshot({
                 // path: './reports/failTest.png',  // we can also define path in this way
             });
+            await this.world.attach(data, 'image/png');
             const filePath = path.join(this.screenshotPath, fileName);
             await writeFile(filePath, data, "base64");
         } catch (err) {
