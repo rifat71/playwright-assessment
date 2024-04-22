@@ -10,6 +10,11 @@ Install NodeJS >=14
 npm install 
 ```
 
+Downlaod browser's binary
+
+```shell 
+npx playwright install 
+```
 
 Environment  Variables
 ---------------------------------
@@ -18,13 +23,12 @@ Environment  Variables
 
 Running Tests
 -------------
-Examples:
-Run the expected passing test with the @wip tag
+Run the example passing test with the @wip tag
 ```shell
 npm run test-pass
 ```
 
-Run the expected failed test with the @wip2 tag
+Run the example failed test with the @wip2 tag
 ```shell
 npm run test-fail
 ```
@@ -40,12 +44,13 @@ Troubleshooting
   * common functions have been added under the utils folder
   * utils/elements.js is added for future use to handle separate common user interaction function 
   * downloaded files will be added to the resources/downloads/* folder. The downloaded pdf will be downloaded here.
-  * screenshot upon test failure will be added in this path: reports/screenshots/* and the work has been done in the after hooks
+  * screenshot upon test failure will be added in this path: reports/screenshots/* and attached to the HTML report. The work has been done in the after hooks
   * generate cucumber HTML report which will be opened automatically after the test execution
   * report will be generated under the reports folder
   * world-class, screenshot class, report class, and hooks have been added here: cucumber/support/*
   * report will be generated under the reports folder
   * baseUrl is in the before hooks and navigating to any URL will be adjusted in the utils/navigation file
+
 
 
 Contributing
